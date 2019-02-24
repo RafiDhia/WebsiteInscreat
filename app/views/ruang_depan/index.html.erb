@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inscreat</title>
+  </head>
+  <body>
+    <div class="sambutan">
+      <div class="gambar">
+        <%= image_tag("G.jpg", size: "256") %>
+      </div>
+      <div class="katanya"> Selamat Datang </div>
+      <div class="org"> INSCREAT </div>
+    </div>
+
+    <div class="WadahMenu">
+      <% @menu.each do |m| %>
+        <tr>
+          <div class="menu"><%= m %></div>
+        </tr>
+      <% end %>
+    </div>
+
+    <div class="Pertujukan"> OKKKK! </div>
+  </body>
+</html>
